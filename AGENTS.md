@@ -1,4 +1,4 @@
-# AGENTS.md — CIB AI Test 项目 Agent 指南
+# AGENTS.md — AI Test 项目 Agent 指南
 
 > 本文件是 Agent 的**主入口**，保持精简。详细规范放在 `docs/`（规范文档）与 `.agents/`（技能与模板）下，**按需加载**，不要一次性全部读取。
 
@@ -14,13 +14,13 @@
 ## 目录结构
 
 ```
-com.cib.ai.test/
+com.ai.test/
 ├── AGENTS.md                 # 本文件：Agent 主入口（始终加载）
 ├── CONTEXT.md                # 领域词汇表（术语冲突时以此为准）
 ├── backend/                  # Spring Boot 后端
-│   └── src/main/java/com/cib/ai/test/
+│   └── src/main/java/com/ai/test/
 │       ├── controller/       # REST 控制器
-│       └── CibAiTestApplication.java
+│       └── AiTestApplication.java
 ├── frontend/                 # React 前端
 │   └── src/
 ├── docs/                     # 文档目录（面向人的规范，按需加载）
@@ -65,7 +65,7 @@ cd frontend && npm run lint                 # Oxlint 检查
 
 ## 核心规则（必须遵守）
 
-1. **后端**：包结构遵循 `com.cib.ai.test.<layer>`（controller / service / repository 等）；新接口放在 `controller/`，命名 `XxxController`。
+1. **后端**：包结构遵循 `com.ai.test.<layer>`（controller / service / repository 等）；新接口放在 `controller/`，命名 `XxxController`。
 2. **前端**：组件用 `.tsx` 函数式组件；提交前必须通过 `npm run lint` 和 `tsc -b`。
 3. **通用**：改代码前先读目标文件；不做超出要求范围的修改；中文注释与提交信息。
 

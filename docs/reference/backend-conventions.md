@@ -7,8 +7,8 @@
 采用**轻量 DDD 分层**，包结构参考 DDD 战术模式但保持简单（测试项目不引入事件总线、CQRS 等重武器）：
 
 ```
-com.cib.ai.test
-├── CibAiTestApplication.java   # 启动类
+com.ai.test
+├── AiTestApplication.java   # 启动类
 ├── controller/                 # 接口适配层（用户接口层）：REST 端点
 ├── service/                    # 应用层：用例编排、事务边界
 ├── domain/                     # 领域层：实体、值对象、领域业务规则（按需创建）

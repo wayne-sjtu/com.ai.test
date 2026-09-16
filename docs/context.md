@@ -71,8 +71,8 @@
 
 | 内容 | 位置 |
 |------|------|
-| 后端入口 | `backend/src/main/java/com/cib/ai/test/CibAiTestApplication.java` |
-| 现有接口 | `backend/src/main/java/com/cib/ai/test/controller/HelloController.java` |
+| 后端入口 | `backend/src/main/java/com/ai/test/AiTestApplication.java` |
+| 现有接口 | `backend/src/main/java/com/ai/test/controller/HelloController.java` |
 | 后端配置 | `backend/src/main/resources/application.yml` |
 | 前端入口 | `frontend/src/main.tsx` / `frontend/src/App.tsx` |
 | Vite 配置 | `frontend/vite.config.ts` |

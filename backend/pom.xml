@@ -11,11 +11,11 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.cib.ai.test</groupId>
-    <artifactId>cib-ai-test</artifactId>
+    <groupId>com.ai.test</groupId>
+    <artifactId>ai-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cib-ai-test</name>
-    <description>CIB AI Test 后端服务</description>
+    <name>ai-test</name>
+    <description>AI Test 后端服务</description>
 
     <properties>
         <java.version>17</java.version>

@@ -7,7 +7,7 @@ description: 编写/运行后端 JUnit 测试与前端验证。当任务要求�
 
 ## 后端测试
 
-1. 测试类放 `backend/src/test/java/com/cib/ai/test/`，与被测类同包。
+1. 测试类放 `backend/src/test/java/com/ai/test/`，与被测类同包。
 2. 使用 JUnit 5 + `spring-boot-starter-test`（已在依赖中），`@SpringBootTest` 用于集成测试。
 3. 运行：
    ```bash

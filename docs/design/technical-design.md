@@ -47,7 +47,7 @@ flowchart LR
 ### 1.3 单体内部分层（DDD 轻量）
 
 ```
-com.cib.ai.test
+com.ai.test
 ├── controller/        # 接口适配层：REST 端点、参数校验、响应封装
 │   ├── customer/      #   C 端端点
 │   └── admin/         #   管理端端点
@@ -410,4 +410,4 @@ cd frontend && npm run dev   # Vite 代理 /api → :8080
 | `spring-boot:run` + curl 冒烟 | ✅ HTTP 200 |
 | `./scripts/verify.sh` | ✅ 后端编译/测试 + 前端 lint/build 全部通过 |
 
-代码位置：`backend/src/main/java/com/cib/ai/test/taclient/`（TaClient / ExternalTaClient 接口、OrderCommand / TaResult / TaCallback 报文、TaSerialGenerator 流水号、FaultMode 故障开关、进程内双 Mock）；测试 `backend/src/test/java/com/cib/ai/test/taclient/InProcessTaClientTest.java`。
+代码位置：`backend/src/main/java/com/ai/test/taclient/`（TaClient / ExternalTaClient 接口、OrderCommand / TaResult / TaCallback 报文、TaSerialGenerator 流水号、FaultMode 故障开关、进程内双 Mock）；测试 `backend/src/test/java/com/ai/test/taclient/InProcessTaClientTest.java`。

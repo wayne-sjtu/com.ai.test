@@ -12,10 +12,10 @@ description: 在 backend/ 下新增或修改 Spring Boot 接口、服务层、�
 
 ## 步骤
 
-1. **定位**：先读 `backend/src/main/java/com/cib/ai/test/` 下相关文件，理解现有结构。
+1. **定位**：先读 `backend/src/main/java/com/ai/test/` 下相关文件，理解现有结构。
 2. **分层**：
    - Controller 只做参数校验与响应封装，业务逻辑下沉到 `service/`。
-   - 包路径：`com.cib.ai.test.controller` / `com.cib.ai.test.service` 等。
+   - 包路径：`com.ai.test.controller` / `com.ai.test.service` 等。
 3. **实现**：
    - REST 接口返回统一结构（如有统一响应类则复用，没有则先用简单类型，不擅自引入规范）。
    - 配置写入 `application.yml`，不要硬编码。
