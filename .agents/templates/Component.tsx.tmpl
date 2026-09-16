@@ -1,0 +1,16 @@
+import { useState } from "react";
+import "./{{Component}}.css";
+
+/**
+ * {{Component}} 组件说明
+ * 命名：PascalCase；函数式组件；样式与组件同目录
+ */
+export function {{Component}}() {
+  const [data, setData] = useState<null | unknown>(null);
+
+  return (
+    <div className="{{component-kebab}}">
+      {{Component}}
+    </div>
+  );
+}

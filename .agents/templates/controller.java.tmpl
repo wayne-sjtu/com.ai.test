@@ -1,0 +1,22 @@
+package com.cib.ai.test.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * {{Xxx}} 控制器
+ * 路径约定：/api/{{kebab-xxx}}（资源名用 kebab-case）
+ */
+@RestController
+@RequestMapping("/api/{{kebab-xxx}}")
+public class {{Xxx}}Controller {
+
+    /**
+     * 示例接口
+     */
+    @GetMapping
+    public String hello() {
+        return "hello";
+    }
+}

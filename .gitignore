@@ -1,0 +1,19 @@
+# 构建产物
+backend/target/
+frontend/dist/
+
+# 依赖
+frontend/node_modules/
+
+# IDE / Agent 本地配置
+.trae/
+.vscode/
+.idea/
+
+# 系统与日志
+.DS_Store
+*.log
+
+# 本地环境
+*.local
+.env

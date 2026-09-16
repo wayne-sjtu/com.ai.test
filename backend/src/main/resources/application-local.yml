@@ -1,0 +1,16 @@
+# local Profile（Phase 1 本地启动测试）
+# MySQL 以 H2 内存库 Mock（MySQL 方言），本行/外部 TA 为进程内 Mock Bean
+spring:
+  datasource:
+    url: jdbc:h2:mem:wealth;MODE=MySQL;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      # 建表与种子数据经 schema.sql / data.sql 载入，不由 Hibernate 生成
+      ddl-auto: none
+    open-in-view: false
+  h2:
+    console:
+      enabled: true

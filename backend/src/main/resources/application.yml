@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cib-ai-test
+  # 默认激活 local Profile（Phase 1 本地 Mock：H2 + 进程内 TA）
+  # 交付部署（docker-compose）时以 SPRING_PROFILES_ACTIVE=compose 覆盖
+  profiles:
+    active: local
